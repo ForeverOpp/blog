@@ -58,29 +58,29 @@ public class helloworld{
 ## 编译并运行程序
 保存后，打开命令提示符（Windows系统使用`Windows键`+`R键`，输入cmd，回车），进入所在目录，使用`javac helloworld.java`编译程序，如果**没有任何提示**就是成功了，编译完成后使用`java helloworld`运行程序，注意没有`.java`。下面给出两种系统编译运行Java程序的命令。
 > Windows系统
-> ```bash
-> > cd Desktop\java
-> > dir
-> helloworld.java
-> > javac helloworld.java
-> > java helloworld
-> Hello, World!
-> 
-> >
+ ```bash
+ > cd Desktop\java
+ > dir
+ helloworld.java
+ > javac helloworld.java
+ > java helloworld
+ Hello, World!
+ 
+ >
 > ```
 
 ---
 > Linux系统
 > ```bash
-> $ pwd
-> /home/example/java
-> $ ls
-> helloworld.java
-> $ javac helloworld.java
-> $ java helloworld
-> Hello, World!
->
-> $
+ $ pwd
+ /home/example/java
+ $ ls
+ helloworld.java
+ $ javac helloworld.java
+ $ java helloworld
+ Hello, World!
+
+ $
 > ```
 
 ## 成功
