@@ -67,11 +67,11 @@ public class helloworld{
  Hello, World!
  
  >
-> ```
+ ```
 
 ---
 > Linux系统
-> ```bash
+ ```bash
  $ pwd
  /home/example/java
  $ ls
@@ -81,7 +81,7 @@ public class helloworld{
  Hello, World!
 
  $
-> ```
+ ```
 
 ## 成功
 至此，你已经编写并且运行了自己的第一个Java程序，迈出了编程的第一步。如果在编写过程中遇到什么问题、错误，多使用搜索引擎，如果还是不明白可以在下面留言问我，或者给我发邮件。
