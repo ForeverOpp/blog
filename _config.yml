@@ -1,18 +1,18 @@
-# Hexo Configuration
+#Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
 title: 折腾屋
 subtitle: 人生在于折腾
-description:
-author: 韩枫
+description: 记录一些念想。
+author: CWind
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://cwind.coding.me
+url: http://i.r6up.win
 root: /
 permalink: /p/:title.html
 permalink_defaults:
