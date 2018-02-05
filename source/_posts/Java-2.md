@@ -1,6 +1,9 @@
 ﻿---
 title: Java - 第一个程序：Hello, World!
 date: 2016-10-30 11:14:36
+tags:
+- Java
+categories: Code
 ---
 
 ## 写在前面
@@ -25,11 +28,11 @@ Edit Plus([点击查看](http://baike.baidu.com/view/206636.htm))，是一款由
 
 ## Hello, World!的历史
 “Hello, world"程序是指在计算机屏幕上输出“Hello,world”这行字符串的计算机程序，“hello, world”的中文意思是“世界，你好”。这个例程在Brian Kernighan 和Dennis M. Ritchie合著的《The C Programme Language》使用而广泛流行。因为它的简洁，实用，并包含了一个该版本的C程序首次出现在1974年Brian Kernighan所撰写的《Programming in C: A Tutorial》
-```C	
+```C
 printf("hello, world\n");
 ```
 实际上将“Hello”和“World”一起使用的程序最早出现于1972年，出现在贝尔实验室成员Brian Kernighan撰写的内部技术文件《Introduction to the Language B》之中：
-```B	
+```B
 main(){
     extern a,b,c;
     putchar(a);putchar(b);putchar(c);putchar('!*n');
@@ -65,7 +68,7 @@ public class helloworld{
  > javac helloworld.java
  > java helloworld
  Hello, World!
- 
+
  >
  ```
 
