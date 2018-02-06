@@ -29,6 +29,7 @@ categories: Code
   > - A Linux or Mac computer.(Though Windows is ok, but I don't suggest you use it, if you still go on working on it, you will have a "good" enough experience.)
   > - A github account.
   > - Be familiar with Markdown.
+  > - Maybe a good VPN.
 
   Now, let's see how to install and use Hexo.
 
@@ -46,10 +47,37 @@ categories: Code
   ```bash
   $ git -v && echo $?
   ```
-  
+  Like last step of installing Node.js, you should see a number 0 now, too. If not, check [github][4] for more information.
+
+## Install Hexo
+  Just input
+  ```bash
+  $ npm install -g hexo-cli
+  ```
+  to install hexo on your system. Input
+  ```bash
+  $ hexo -v && echo $?
+  ```
+  to check if it installed successfully. For more infomation, you can go to [Hexo Wiki Page][1].
+
+  From now on, you finished hexo installation, let's see how to use it.
+
+## Simple Usage
+  Emmm, you should creat a workspace for you blog at first.
+  ```bash
+  $ mkdir blog
+  $ cd blog
+  ```
+  Unless special mention, we will use this dierctory by default.
+  Then, initialize your blog by inputing
+  ```bash
+  $ hexo init
+  ```
+  After a while, you can get a default blog.
 
 
-
-  ---
   [1]: http://hexo.io/
   [2]: http://7xju1y.com1.z0.glb.clouddn.com/20180206001737_Me2aHU_FireShot%20Capture%201%20-%20CWind%20-%20https___i.r6up.win_.jpeg
+  [3]: http://nodejs.org/
+  [4]: https://github.com
+  [5]: http://
