@@ -33,6 +33,20 @@ categories: Code
   Now, let's see how to install and use Hexo.
 
 ## Install Node.js
+  Download Node.js from its official website [Node.js][3], and follow its guide to install it. Now you get npm installed. To test whether the npm successfully installed, you can input
+  ```bash
+  $ npm -v && echo $?
+  ```
+  Then you will see a number 0, if not, check your Node.js installation.
+
+## Install Git
+  In macOS, you just need to input command like `gcc` or `git` in terminal, then macOS will ask you if you need to download developer command tool, just choose `Yes`.
+  In Linux, you can use package control system like `apt` or `yum`.
+  To check if git works, input
+  ```bash
+  $ git -v && echo $?
+  ```
+  
 
 
 
