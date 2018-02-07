@@ -87,27 +87,27 @@ categories: Code
   | theme       | Which theme you use      |
 
   > Notice: Every argument follow the syntax like this:
-  > ```bash
-  >   theme: landspace
-  > ```
+  ```bash
+  theme: landspace
+  ```
   > There is the only `SPACE` between the symbol `:` and `landspace`.
 
 　　
   > ### Install git deployer in you blog
   > You need to install a git deployer to push your blog into github, Input
-  > ```bash
-    $ npm install hexo-deployer-git --save
-    ```
+  ```bash
+  $ npm install hexo-deployer-git --save
+  ```
   > > Notice: You should reinstall it whenever you have a new blog.
 
-  > Then, modify your `_config.yml` to make it avalibale. Add these content at the end of the file.
-  > ```bash
+  > Then, modify your `_config.yml` to make it avaliable. Add these content at the end of the file.
+  ```bash
   deploy:
     type: git
     repo: <repository url>
     branch: [branch]
     message: [message]
-    ```
+  ```
   > > Notice: This file is in your blog directory.
 
   > | Argument    | Description                         |
@@ -119,9 +119,9 @@ categories: Code
 
   Now, you can creat you first passage by
   ```bash
-    $ hexo new [layout] <title>
+  $ hexo new [layout] <title>
   ```
-  
+
 
 
 

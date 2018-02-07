@@ -49,6 +49,10 @@ input::-moz-focus-inner {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  margin: 0 auto;
+  vertical-align: middle; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 去除默认边框 */
@@ -99,7 +103,7 @@ ul, ol {
 }
 
 /* 对齐是排版最重要的因素, 别让什么都居中 */
-caption, th {
+caption, th, td {
   text-align: left;
 }
 
@@ -297,14 +301,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* 同 ul/ol，在文章中应用 table 基本格式 */
-// .typo table th,
-// .typo table td,
+//.typo table th,
+//.typo table td,
 .typo-table th,
 .typo-table td,
 .typo table caption {
-  border: 1px solid #ddd;
+  border: 1px solid #fff;
   padding: 0.5em 1em;
   color: #666;
+  margin: 0 auto;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
