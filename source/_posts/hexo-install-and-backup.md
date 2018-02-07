@@ -73,7 +73,56 @@ categories: Code
   ```bash
   $ hexo init
   ```
-  After a while, you can get a default blog.
+  After a while, you can get a default blog. But you need to modify `_config.yml` to customlize your blog.
+
+  | Argument    | Description              |
+  |    :-:      |            :-:           |
+  | title       | Website title            |
+  | subtitle    | Website subtitle         |
+  | description | Use for SEO              |
+  | author      | Blog author, your name   |
+  | language    | Your website language    |
+  | timezone    | Don't mind it            |
+  | url         | Your blog url            |
+  | theme       | Which theme you use      |
+
+  > Notice: Every argument follow the syntax like this:
+  > ```bash
+  >   theme: landspace
+  > ```
+  > There is the only `SPACE` between the symbol `:` and `landspace`.
+
+　　
+  > ### Install git deployer in you blog
+  > You need to install a git deployer to push your blog into github, Input
+  > ```bash
+    $ npm install hexo-deployer-git --save
+    ```
+  > > Notice: You should reinstall it whenever you have a new blog.
+
+  > Then, modify your `_config.yml` to make it avalibale. Add these content at the end of the file.
+  > ```bash
+  deploy:
+    type: git
+    repo: <repository url>
+    branch: [branch]
+    message: [message]
+    ```
+  > > Notice: This file is in your blog directory.
+
+  > | Argument    | Description                         |
+  > | :-:         | :-:                                 |
+  > | type        | The type of deployer, here is git   |
+  > | repo        | Your git repository url, ssh or http|
+  > | branch      | Repository branch, like `master`    |
+  > | message     | Commit message, usually don't mind  |
+
+  Now, you can creat you first passage by
+  ```bash
+    $ hexo new [layout] <title>
+  ```
+  
+
 
 
   [1]: http://hexo.io/
