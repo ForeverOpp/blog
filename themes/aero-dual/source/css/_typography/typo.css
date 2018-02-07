@@ -103,7 +103,7 @@ ul, ol {
 }
 
 /* 对齐是排版最重要的因素, 别让什么都居中 */
-caption, th, td {
+caption, th {
   text-align: left;
 }
 
