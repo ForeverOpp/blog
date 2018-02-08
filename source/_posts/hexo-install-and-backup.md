@@ -45,7 +45,7 @@ categories: Code
 #### Install Node.js
   Download Node.js from its official website [Node.js][3], and follow its guide to install it. Now you get npm installed. To test whether the npm successfully installed, you can input
   ```bash
-  $ npm -v && echo $?
+  npm -v && echo $?
   ```
   Then you will see a number 0, if not, check your Node.js installation.
 
@@ -54,18 +54,18 @@ categories: Code
   In Linux, you can use package control system like `apt` or `yum`.
   To check if git works, input
   ```bash
-  $ git -v && echo $?
+  git -v && echo $?
   ```
   Like last step of installing Node.js, you should see a number 0 now, too. If not, check [github][4] for more information.
 
 #### Install Hexo
   Just input
   ```bash
-  $ npm install -g hexo-cli
+  npm install -g hexo-cli
   ```
   to install hexo on your system. Input
   ```bash
-  $ hexo -v && echo $?
+  hexo -v && echo $?
   ```
   to check if it installed successfully. For more infomation, you can go to [Hexo Wiki Page][1].
 
@@ -73,20 +73,20 @@ categories: Code
 
   Before use it, you should creat a workspace for you blog at first.
   ```bash
-  $ mkdir blog
-  $ cd blog
+  mkdir blog
+  cd blog
   ```
   Unless special mention, we will use this directory by default.
 
 #### Install Git Deployer In Your Blog
   You need to install a git deployer to push your blog into github, Input
   ```bash
-  $ npm install hexo-deployer-git --save
+  npm install hexo-deployer-git --save
   ```
   > Notice: You should reinstall it whenever you have a new blog.
 
   Then, modify your `_config.yml` to make it avaliable. Add these contents at the end of the file.
-  ```bash
+  ```yaml
   deploy:
     type: git
     repo: <repository url>
@@ -106,7 +106,7 @@ categories: Code
 ## Simple Usage
   Initialize your blog by inputing
   ```bash
-  $ hexo init
+  hexo init
   ```
   After a while, you can get a default blog. But you need to modify `_config.yml` to customlize your blog.
 
@@ -122,7 +122,7 @@ categories: Code
   | theme       | Which theme you use      |
 
   > Notice: Every argument follow the syntax like this:
-  ```bash
+  ```yaml
   theme: landspace
   ```
   > There is A `SPACE` between the symbol `:` and `landspace`.
@@ -130,7 +130,7 @@ categories: Code
 
   Now, you can creat you first passage by
   ```bash
-  $ hexo new [layout] <title>
+  hexo new [layout] <title>
   ```
   And you will see a new file in `./source/_post/`, modify it to draw your think.
   > Tips: If you want to add a jumpable content in your passage, you can do like this( don't need use html label).
@@ -149,11 +149,11 @@ categories: Code
 
   When creative things compelete rapidly, generate your passage by
   ```bash
-  $ hexo g
+  hexo g
   ```
   and submit by
   ```bash
-  $ hexo d
+  hexo d
   ```
   If you want to see its effact without submitting, input
   ```bash
