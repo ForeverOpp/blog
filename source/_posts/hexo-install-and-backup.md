@@ -90,7 +90,7 @@ categories: Code
   ```bash
   theme: landspace
   ```
-  > There is the only `SPACE` between the symbol `:` and `landspace`.
+  > There is A `SPACE` between the symbol `:` and `landspace`.
 
 　　
   > ### Install git deployer in you blog
@@ -100,7 +100,7 @@ categories: Code
   ```
   > > Notice: You should reinstall it whenever you have a new blog.
 
-  > Then, modify your `_config.yml` to make it avaliable. Add these content at the end of the file.
+  > Then, modify your `_config.yml` to make it avaliable. Add these contents at the end of the file.
   ```bash
   deploy:
     type: git
@@ -121,7 +121,7 @@ categories: Code
   ```bash
   $ hexo new [layout] <title>
   ```
-
+  And you will see a new file in `./source/_post/`.
 
 
 
