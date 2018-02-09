@@ -223,7 +223,7 @@ categories: Code
 
   And clone your backuped blog by
   ```bash
-  git clone ssh://git@github.com:XXX/blog.git.
+  git clone ssh://git@github.com:XXX/blog.git
   ```
   Then, exec
   ```bash
