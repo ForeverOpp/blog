@@ -30,8 +30,10 @@ categories: Code
   > - [Installation](#Installation)
   >   - [Install Node.js](#Install-Node-js)
   >   - [Install Git](#Install-Git)
-  >   - [Install Git Deployer In Your Blog](#Install-Git-Deployer-In-Your-Blog)
+  >   - [Install Git Deployer](#Install-Git-Deployer)
   > - [Simple Usage](#Simple-Usage)
+  > - [Backup](#Backup)
+  > - [Restore](#Restore)
 
 ## Prepare
   > - A Linux or Mac computer.(Though Windows is ok, but I don't suggest you use it, if you still go on working on it, you will have a bad enough experience.)
@@ -78,7 +80,7 @@ categories: Code
   ```
   Unless special mention, we will use this directory by default.
 
-#### Install Git Deployer In Your Blog
+#### Install Git Deployer
   You need to install a git deployer to push your blog into github, Input
   ```bash
   npm install hexo-deployer-git --save
@@ -165,7 +167,77 @@ categories: Code
   INFO  Start processing
   INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
   ```
-  Then, go to `http://localhost:4000/` to see your blog in local device.
+  Then, go `http://localhost:4000/` to see your blog in local device.
+  Also, there are two useful commands for you.
+  ```bash
+  hexo clean
+  ```
+  It means clean the generated files. You can use it whenever you have something wrong to deal with.
+  ```bash
+  hexo list
+  ```
+  List your website information.
+
+## Backup
+  First, you should creat an **another empty** repository in github. Then initialize git by inputing
+  ```bash
+  git init
+  ```
+  Then, add your blog files to the git repository by
+  ```bash
+  git add .
+  ```
+  > Notice: There is an `.` after `add`.
+
+  Commit by inputing
+  ```bash
+  git commit -m "[Message]"
+  ```
+  You can replace `[Message]` by anything you like, it is the message submited to github to show the feature of this commit.
+  Then, remote your repository by inputing
+  ```bash
+  git remote ssh://git@github.com:XXX/blog.git
+  ```
+  > Notice: `ssh` means the type which the deployer will use, if you add the public RSA key to the github, youcan use this method, or chnge it to `https://`. `XXX` means your github username, and `blog` means your repository. If you use https method, you should write it in this way
+  ```bash
+  git remote https://github.com/XXX/blog.git
+  ```
+
+  Now finish your first backup by
+  ```bash
+  git push origin master
+  ```
+  `master` means the brach of your github repository, you should use it by default. Before change it, you should creat a new brach in the github website.
+
+
+
+## Restore
+  If you have a new computer or you move your workspce, you need to restore your blog.
+  First, you should install `git` and `Node.js`. And creat
+  a new workspce by inputing
+  ```bash
+  mkdir workspace
+  cd workspace
+  ```
+  > Notice: If your directory name is too lang to type, just use `TAB` to help you.
+
+  And clone your backuped blog by
+  ```bash
+  git clone ssh://git@github.com:XXX/blog.git.
+  ```
+  Then, exec
+  ```bash
+  npm install hexo --save
+  ```
+  npm will install hexo in this directory automatically.
+  By the way, install git deployer in this directory, see [Install Git Deployer](#Install-Git-Deployer).
+
+  Now, you have your blog restored.
+
+
+
+
+
 
   [1]: http://hexo.io/
   [2]: http://7xju1y.com1.z0.glb.clouddn.com/20180206233011_0CbdUI_FireShot%20Capture%203%20-%20CWind%20-%20https___i.r6up.win_.jpeg
