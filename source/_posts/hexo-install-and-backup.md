@@ -213,13 +213,12 @@ categories: Code
 
 ## Restore
   If you have a new computer or you move your workspce, you need to restore your blog.
-  First, you should install `git` and `Node.js`. And creat
-  a new workspce by inputing
+  First, you should install `git` and `Node.js`. And creat a new workspce by inputing
   ```bash
   mkdir workspace
   cd workspace
   ```
-  > Notice: If your directory name is too lang to type, just use `TAB` to help you.
+  > Notice: If your directory name is too long to type, just use `TAB` to help you.
 
   And clone your backuped blog by
   ```bash
