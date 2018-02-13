@@ -9,10 +9,10 @@ tags:
 - Mac
 categories: Code
 ---
-## Foreword
-  About three years ago around 2015, I found I need to record something important by writting blog. But I hadn't money to buy VPS or Hosting, and it is too hard to do it in free hostings. So I found github(gitcafe) and Hexo.
+# Foreword
+  About three years ago around 2015, I found I need to record something important by writting blog. But I didn't prefer to buy VPS or Hosting, and it is too hard to do it in free hostings. So I found github(gitcafe) and Hexo.
   - What is Hexo?
-  It is an fantastic program which can help people creat their static blog page easily.
+  It is a fantastic program which can help people creat their static blog page easily.
 
   - How Hexo works?
   It relys on Node.js, and can generate static html pages in your local device.
@@ -25,7 +25,7 @@ categories: Code
   ![IndexPic][2]
   Then, if you want to know more about Hexo, you can check details in its wiki page, see [Hexo Wiki Page][1].
 
-## Contents
+# Contents
   > - [Prepare](#Prepare)
   > - [Installation](#Installation)
   >   - [Install Node.js](#Install-Node-js)
@@ -35,7 +35,7 @@ categories: Code
   > - [Backup](#Backup)
   > - [Restore](#Restore)
 
-## Prepare
+# Prepare
   > - A Linux or Mac computer.(Though Windows is ok, but I don't suggest you use it, if you still go on working on it, you will have a bad enough experience.)
   > - A github account.
   > - Be familiar with Markdown.
@@ -43,15 +43,15 @@ categories: Code
 
   Now, let's see how to install and use Hexo.
 
-## Installation
-#### Install Node.js
+# Installation
+## Install Node.js
   Download Node.js from its official website [Node.js][3], and follow its guide to install it. Now you get npm installed. To test whether the npm successfully installed, you can input
   ```bash
   npm -v && echo $?
   ```
   Then you will see a number 0, if not, check your Node.js installation.
 
-#### Install Git
+## Install Git
   In macOS, you just need to input command such as `gcc` or `git` in terminal, then macOS will ask you if you need to download developer command line tools, just choose `Yes`.
   In Linux, you can use package control system like `apt` or `yum`.
   To check if git works, input
@@ -60,7 +60,7 @@ categories: Code
   ```
   Like last step of installing Node.js, you should see a number 0 now, too. If not, check [github][4] for more information.
 
-#### Install Hexo
+## Install Hexo
   Just input
   ```bash
   npm install -g hexo-cli
@@ -80,7 +80,7 @@ categories: Code
   ```
   Unless special mention, we will use this directory by default.
 
-#### Install Git Deployer
+## Install Git Deployer
   You need to install a git deployer to push your blog into github, Input
   ```bash
   npm install hexo-deployer-git --save
@@ -105,7 +105,7 @@ categories: Code
   | message     | Commit message, usually don't mind  |
 
 
-## Simple Usage
+# Simple Usage
   Initialize your blog by inputing
   ```bash
   hexo init
@@ -178,7 +178,7 @@ categories: Code
   ```
   List your website information.
 
-## Backup
+# Backup
   First, you should creat an **another empty** repository in github. Then initialize git by inputing
   ```bash
   git init
@@ -198,7 +198,7 @@ categories: Code
   ```bash
   git remote ssh://git@github.com:XXX/blog.git
   ```
-  > Notice: `ssh` means the type which the deployer will use, if you add the public RSA key to the github, youcan use this method, or chnge it to `https://`. `XXX` means your github username, and `blog` means your repository. If you use https method, you should write it in this way
+  > Notice: `ssh` means the type which the deployer will use, if you add the public RSA key to the github, you can use this method, or change it to `https://`. `XXX` means your github username, and `blog` means your repository. If you use https method, you should write it in this way
   ```bash
   git remote https://github.com/XXX/blog.git
   ```
@@ -207,11 +207,11 @@ categories: Code
   ```bash
   git push origin master
   ```
-  `master` means the brach of your github repository, you should use it by default. Before change it, you should creat a new brach in the github website.
+  `master` means the brach of your github repository, you should use it by default. Before changing it, you should creat a new brach in the github website.
 
 
 
-## Restore
+# Restore
   If you have a new computer or you move your workspce, you need to restore your blog.
   First, you should install `git` and `Node.js`. And creat a new workspce by inputing
   ```bash
@@ -232,6 +232,8 @@ categories: Code
   By the way, install git deployer in this directory, see [Install Git Deployer](#Install-Git-Deployer).
 
   Now, you have your blog restored.
+
+  > ****NOTICE: THIS BLOG IS NOT FINISHED, AND SOMETHING MUST BE WRONG BECAUSE I DID NOT TEST IT AT ALL****
 
 
 
