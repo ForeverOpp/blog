@@ -77,7 +77,7 @@ export CLASSPATH
 
 ## Linux系统
 ```bash
-$ javac -version $$ echo $?
+javac -version $$ echo $?
 ```
 如果显示0，说明成功。
 # 成功
