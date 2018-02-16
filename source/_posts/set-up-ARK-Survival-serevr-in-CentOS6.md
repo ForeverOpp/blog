@@ -2,6 +2,12 @@
 title: 在CentOS 6上搭建 方舟：生存进化 服务器
 date: 2018-02-17 00:14:13
 tags:
+- ARK: Survival Evolved
+- Install
+- Linux
+- Server
+- Game
+categories: Game
 ---
 # Foreword
   In 2018, Steam had been started a Chinese Spring Festival Selling Activity, I buy a ARK: Survival Evolved in this activity. Though I can't play it at the moment, but I can setup a server. Luckily, I have a avaliable VPS.
@@ -13,14 +19,14 @@ tags:
   >   - [Update glibc](#Update-glibc)
   >   - [Update gcc](#Update-gcc)
   >   - [Install Third Party Dependency](#Install-Third-Party-Dependency)
-  >   - [Install arkserver](Install-arkserver)
+  >   - [Install arkserver](#Install-arkserver)
   > - [Usage](#Usage)
   >   - [All Commands](#All-Commands)
   >   - [Running](#Running)
   >   - [Updating](#Updating)
-  >   - [#Debugging](#Debugging)
+  >   - [Debugging](#Debugging)
   >   - [Configure LinuxGSM](#Configure-LinuxGSM)
-  >   - [Further Information](Further-Information)
+  >   - [Further Information](#Further-Information)
 
 # Prepare
   > - A 4GB RAM or higher VPS
