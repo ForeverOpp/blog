@@ -5,7 +5,7 @@ menu:
   # change github and email values to your own addresses
   Github: https://github.com/ForeverOpp
   Email: mailto:life.app.hanfeng@hotmail.com
-rss: /atom.xml
+  Rss: /rss.xml
 
 # Set to false to disable banner
 use_header_cover: true

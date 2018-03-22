@@ -10,7 +10,7 @@ tags:
 categories: Game
 ---
 # Foreword
-  In 2018, Steam had been started a Chinese Spring Festival Selling Activity, I buy a ARK: Survival Evolved in this activity. Though I can't play it at the moment, but I can setup a server. Luckily, I have a avaliable VPS.
+  In 2018, Steam had been started a Chinese Spring Festival Selling Activity, I buy a ARK: Survival Evolved in this activity. Though I can't play it at the moment, but I can setup a server. Luckily, I have an avaliable VPS.
 
 <!--more-->
 # Contents
@@ -71,7 +71,7 @@ categories: Game
   ```bash
   ../configure --prefix='/usr'
   ```
-  > Notice: There is two `.` before the word `configure`.
+  > Notice: There are two `.` before the word `configure`.
 
 　
 
@@ -82,16 +82,16 @@ categories: Game
   vim ../scripts/test-installation.pl
   ```
   To jump to 171th line, press `:` and type `171` and `ENTER`.
-  And replace `if (/$ld_so_name/) {`` with if (/\Q$ld_so_name\E/) {`
+  And replace `if (/$ld_so_name/) {` with `if (/\Q$ld_so_name\E/) {`
   Then install it
   ```bash
   make && make install
   ```
 
 ## Update gcc
-  > Notice: This operation takes a lot of space! be sure to have enough!
+  > Notice: This operation takes a lot of space! Be sure to have enough!
 
-  Like the last step, so I gave command only.
+  Like the last step, so I gave commands only.
   ```bash
   cd /tmp
   wget ftp://ftp.gwdg.de/pub/misc/gcc/releases/gcc-4.6.4/gcc-4.6.4.tar.gz
@@ -121,13 +121,13 @@ categories: Game
   > ```bash
   rpm -Uvh http://mirror.webtatic.com/yum/el6/latest.rpm
   yum install epel-release
-  > ```
+  ```
   > or input
   > ```bash
   wget http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
   rpm -ivh epel-release-6-8.noarch.rpm
-  > ```
-  For 32-bit user, replace `x86_64` with `i386`.
+  ```
+  > For 32-bit user, replace `x86_64` with `i386`.
 
 ## Install arkserver
   Switch to root.
