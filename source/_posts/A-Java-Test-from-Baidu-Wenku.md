@@ -66,7 +66,7 @@ public class Rabbit {
 		this.age = (int) Nature.Time.day;
 	}
 }
-``
+```
 代码比较简单，就不逐句解释了。转换是为了最后的换算年。
 然后是`mainClass`类，负责处理主要过程，代码如下：
 ```java
