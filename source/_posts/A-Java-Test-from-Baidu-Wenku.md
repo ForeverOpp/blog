@@ -59,8 +59,8 @@ public class Rabbit {
 		return (int) (adultAge/Nature.Time.month);
 	}
 
-	public void addAge(int a) {
-		this.age += a;
+	public void syncAge(int a) {
+		this.age = a;
 	}
 	public Rabbit() {
 		this.age = (int) Nature.Time.day;
