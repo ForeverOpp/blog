@@ -76,6 +76,12 @@ deploy:
 
 plugin:
       - hexo-generator-feed
+      - hexo-renderer-pandoc
+
+pandoc:
+  mathEngine: katex
+  #  filters: pandoc-eqnos
+
         #Feed Atom
 feed:
     type: atom

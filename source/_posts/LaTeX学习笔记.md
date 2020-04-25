@@ -46,4 +46,47 @@ categories:
     很重要，没有它导言区的那些标题作者什么的就无法显示。
     - `\tableofcontents`
     这个是我觉得LaTeX优于MarkDown的一个地方（也可能是我孤陋寡闻），就是使用这个标签可以自动根据你的文章生成一个目录放在文章前。
-    \[E = mc^2\]
+    - `\begin{}`
+      这个其实不能算标签，这个我会另讲。现在说一下与这个类似且常用的
+      - `\begin{abstract}`
+        这是创建一个摘要，效果就是一个居中的Abstract下面有你写的文字，当然，所有的`\begin{argu}`标签必须以`\end{argu}`结束。
+
+    - `\label{eqx}`
+      x可用数值替换，作用是标注一个等式，效果如下
+    $$E = mc^2$${ #eq:test}
+    在公式@eq:test中...
+    $$
+A = \begin{bmatrix}
+        a_{11}    & a_{12}    & ...    & a_{1n}\\
+        a_{21}    & a_{22}    & ...    & a_{2n}\\
+        a_{31}    & a_{22}    & ...    & a_{3n}\\
+        \vdots    & \vdots    & \ddots & \vdots\\
+        a_{n1}    & a_{n2}    & ... & a_{nn}\\
+    \end{bmatrix} , b = \begin{bmatrix}
+        b_{1}  \\
+        b_{2}  \\
+        b_{3}  \\
+        \vdots \\
+        b_{n}  \\
+    \end{bmatrix}
+$$
+
+- 关于Hexo中启用LaTeX支持
+
+  博客嘛，LaTeX支持是很有必要的，不然怎么写公式？查阅了网上很多的资料发现，一个最简单且完美的方式是更换Hexo的MarkDown渲染器，更换成Pandoc即可。当然，首先需要安装Pandoc，再安装渲染器。但是，我一开始按照网上简单的两行命令操作并没有用。
+  ```shell
+  npm install hexo-renderer-pandoc --save
+  npm uninstall hexo-renderer-marked --save
+  ```
+  找了许多资料也没有解决问题，后来尝试了这么几个命令之后就成功了：
+  ```shell
+  npm install hexo-math --save
+  npm install hexo-renderer-mathjax
+  npm install hexo-katex
+  ```
+  同时，建议在Hexo文件夹中的`_config.yml`文件中加入：
+  ```yml
+  pandoc:
+    mathEngine: katex
+  ```
+  当然，也可以使用默认的mathjax。
