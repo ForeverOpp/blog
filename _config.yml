@@ -71,7 +71,7 @@ theme_style: dark
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@git.coding.net:CWind/CWind.git
+  repo: git@github.com:ForeverOpp/foreveropp.github.io.git
   branch: master
 
 plugin:
