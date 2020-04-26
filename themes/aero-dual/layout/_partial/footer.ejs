@@ -9,7 +9,7 @@
         <p class="copyright text-muted">
           Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
         </p>
-	<p class="copyright text-muted">Hosted by <a target="_blank" href="https://pages.coding.me">Coding Pages</a></p>
+	<p class="copyright text-muted">Hosted by <a target="_blank" href="https://www.netlify.com/">Netlify</a></p>
       </div>
     </div>
   </div>
@@ -23,8 +23,8 @@
   var message_Path = '/live2d/'
   var home_Path = 'https://i.r6up.win/'
 </script>
-<script type="text/javascript" src="/live2d/js/live2d.js"></script>
-<script type="text/javascript" src="/live2d/js/message.js"></script>
+<%- js("live2d/js/live2d.js") %>
+<%- js("live2d/js/message.js") %>
 <script type="text/javascript">
   loadlive2d("live2d", "/live2d/model/tia/model.json");
 </script>
