@@ -135,12 +135,10 @@ public class mainClass {
 最后，项目结构、运行结果如图：
 ![2]![3]
 最终输出：
-> [ERR]  Finally, time passes 540 days, it means 18 months, about 1.5 years, and 1596 rabbits born, 987 rabbits become adult. Bye.
+
+
+	>  [ERR]  Finally, time passes 540 days, it means 18 months, about 1.5 years, and 1596 rabbits born, 987 rabbits become adult. Bye.
 
 
 
 在此，留一个坑，未来此题需用C++实现。
-
-[1]: http://7xju1y.com1.z0.glb.clouddn.com/20180616201519_RkUjPM_WX20180616-201510.png
-[2]: http://7xju1y.com1.z0.glb.clouddn.com/20180616202700_gEx2og_WX20180616-202648.png
-[3]: http://7xju1y.com1.z0.glb.clouddn.com/20180616231102_3GUJs4_WX20180616-231054.png

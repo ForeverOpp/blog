@@ -241,7 +241,7 @@ categories: Code
 
 
   [1]: http://hexo.io/
-  [2]: http://7xju1y.com1.z0.glb.clouddn.com/20180206233011_0CbdUI_FireShot%20Capture%203%20-%20CWind%20-%20https___i.r6up.win_.jpeg
+
   [3]: http://nodejs.org/
   [4]: https://github.com
   [5]: http://

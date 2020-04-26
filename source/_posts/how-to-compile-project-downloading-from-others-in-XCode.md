@@ -66,9 +66,4 @@ categories: Code
 
 
 
-[1]: http://7xju1y.com1.z0.glb.clouddn.com/20180211174925_tGxhbb_WX20180211-174714.jpeg
-[2]: http://7xju1y.com1.z0.glb.clouddn.com/20180211174925_HuybqP_WX20180211-174907.jpeg
-[3]: https://github.com/Carthage/Carthage
-[5]: http://7xju1y.com1.z0.glb.clouddn.com/20180212143543_ztAThj_%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-02-12%20%E4%B8%8A%E5%8D%886.49.52.png
-[4]: http://7xju1y.com1.z0.glb.clouddn.com/20180212143543_8Ks3Fs_%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-02-12%20%E4%B8%8A%E5%8D%886.48.58.png
-[6]: http://7xju1y.com1.z0.glb.clouddn.com/20180212143543_Nz0yKl_%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-02-12%20%E4%B8%8A%E5%8D%8810.08.26.png
+[

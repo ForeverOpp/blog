@@ -6,7 +6,7 @@ tags:
 categories: Code
 ---
 # 写在前面
-要想进行开发Java，就必须要搭建开发环境。现在虽然有些[IDE（点击查看）](http://baike.baidu.com/item/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/298524?fromtitle=IDE&fromid=8232086&type=syn)可以自动帮助搭建，但是这样你永远不会明白怎么搭建环境，也就是说你对工具的依赖太大。搭建Java开发环境很麻烦，但是学习中必须迈出的一步。
+要想进行开发Java，就必须要搭建开发环境。现在虽然有些[IDE（点击查看）](https://baike.baidu.com/item/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/298524?fromtitle=IDE&fromid=8232086&type=syn)可以自动帮助搭建，但是这样你永远不会明白怎么搭建环境，也就是说你对工具的依赖太大。搭建Java开发环境很麻烦，但是学习中必须迈出的一步。
 <!--more-->
 
 # 目录
@@ -27,7 +27,7 @@ categories: Code
 > * 无比的耐心
 
 # 下载JDK
-JDK目前最新的版本是1.8，最好去官网下载，[点击前往](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)。
+JDK目前最新的版本是1.8，最好去官网下载，[点击前往](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)。
 如图：
 
 > ![JDK下载界面][1]
@@ -82,7 +82,3 @@ javac -version $$ echo $?
 如果显示0，说明成功。
 # 成功
 至此，Java开发环境的搭建算是完成了。如果我们需要开发程序，只需要使用任意的无格式的文本编辑器即可。
-
-[1]: https://foreveropp.github.io/pic/jdk-download.png
-[2]: https://foreveropp.github.io/pic/advancedsetting.png
-[3]: https://foreveropp.github.io/pic/environmentvar.png
