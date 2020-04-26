@@ -80,7 +80,7 @@ plugin:
 
 pandoc:
   mathEngine: katex
-  #  filters: pandoc-eqnos
+  ilters: pandoc-eqnos
 
         #Feed Atom
 feed:
