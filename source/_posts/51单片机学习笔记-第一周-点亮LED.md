@@ -132,14 +132,16 @@ style.asm.8=font:Courier New,size:16,fore:#FF80FF,back:#1E1E1E
 font.monospace.txt=Courier New
 style.txt.32=font:Verdana,size:16,fore:#9CDCFE,back:#1E1E1E
 
-
+  
 ```  
+  
 关于Keil，还有一些需要注意的，新建项目之后，需要右键点击左侧`Project`下面的`Source Group`来新建文件，否则无法自动加入编译目标。另外，使用`ALT`+`F7`来呼出构建菜单，在`Output`里面把`Create HEX File`打钩，就可以在`Objects`文件夹下生成可以烧录的文件。
 Keil安装完成后，需要在STC官方提供的`STC-ISP`软件中选择`Keil仿真设置`中的`添加型号和头文件到Keil中`，选择Keil的安装目录（内必须有`C51`文件夹）即可。  
 然后就是写代码了，这里是第一天所以先写一个简单的进度条LED程序测试环境是否搭建成功。  
   
 # 写代码  
 代码如下：   
+   
 ``` C [进度条]
   #include <reg52.h>
 
@@ -172,8 +174,8 @@ Keil安装完成后，需要在STC官方提供的`STC-ISP`软件中选择`Keil�
       }
 
   }  
- ```
-   
+ ```  
+    
  # 程序解析
  我这个开发板，置0是开（估计是LED正极接VCC，然后负极接P1），置1是关，所以我只需要让每一位为0即可，闪烁也是如此。  
  需要注意的就是这个`delay`，由于现在无法操作时钟模块，只能使用循环计时的方式进行延时。还有`P1*=2`及`P1/=2`相当于左移和右移。  
