@@ -16,7 +16,7 @@ categories:
 Keil在高分屏下的设置，需要右键`属性`->`兼容性`->`更改高DPI设置`->`高DPi缩放替代`即可。  
 关于编辑器主题，这里附赠一个类似VS Code的暗色主题：  
   
-``` Config [配置文件]
+``` Config [配置文件]  
 # properties for all file types
 indent.automatic=1
 virtual.space=1
@@ -131,7 +131,7 @@ style.asm.8=font:Courier New,size:16,fore:#FF80FF,back:#1E1E1E
 
 # Editor Text files
 font.monospace.txt=Courier New
-style.txt.32=font:Verdana,size:16,fore:#9CDCFE,back:#1E1E1E  
+style.txt.32=font:Verdana,size:16,fore:#9CDCFE,back:#1E1E1E   
 ```  
   
     
@@ -142,7 +142,7 @@ Keil安装完成后，需要在STC官方提供的`STC-ISP`软件中选择`Keil�
 # 写代码  
 代码如下：   
    
-``` C [进度条]
+``` C [进度条]  
   #include <reg52.h>
 
   void delay(void) {
