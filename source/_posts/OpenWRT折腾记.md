@@ -27,7 +27,7 @@ categories:
 一查`OpenWRT`官方，还好，这种类型的CPU在官方的支持列表中，不需要自己写`DTS`文件，相当省事。那其实需要做的仅仅就是编译一个插件出来，不需要编译内核和固件。[上网一查](https://jarviswwong.com/compile-ipk-separately-with-openwrt.html)，还真有教程，很新，这意味着不需要自己摸索了（实际上我只看到教程下载`LEDE`然后就自己摸索着做了，浪费了大把时间）。
   
 # 编译插件
-> **注意！所有操作请在 _非_ ROOT环境下进行**  
+> 注意！所有操作请在 **非** ROOT环境下进行  
   
 按照教程，需要先准备一个虚拟机运行`Ubuntu`系统，这里我选择最新的`Ubuntu 20.04 LTS`版本。然后准备`OpenWRT`官方的`SDK`，在我这里，我通过查看路由器的`OpenWRT`版本发现是大于19的，那我就下载最新的`19.07.5`版本的SDK，找到`ipq40XX`然后找到[openwrt-sdk-19.07.5-ipq40xx-generic_gcc-7.5.0_musl_eabi.Linux-x86_64.tar.xz](https://archive.openwrt.org/releases/19.07.5/targets/ipq40xx/generic/openwrt-sdk-19.07.5-ipq40xx-generic_gcc-7.5.0_musl_eabi.Linux-x86_64.tar.xz)文件下载下来解压为`openwrt-sdk`备用。克隆`LEDE`到本地，将`lede/package`下的文件全部拷贝并覆盖至`openwrt-sdk/package`。  
 
@@ -49,6 +49,7 @@ cd package
 git clone https://github.com/mchome/openwrt-dogcom
 git clone https://github.com/mchome/luci-app-dogcom
 ```
+  
 > 当然，您也可以通过修改`luci-app-dogcom`中的文件来自定义界面风格
 
 使用
