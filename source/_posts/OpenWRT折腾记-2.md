@@ -71,9 +71,11 @@ opkg install http://EvydePC:8000/luci-app-dogcom.ipk
 # 安装插件
 opkg install fdisk swap-utils kmod-usb-storage kmod-fs-ext4 e2fsprogs kmod-usb-ohci kmod-usb-uhci  block-mount
 
-# 使用fdisk对U盘进行分区，/dev/sda是U盘
+# 使用fdisk对U盘进行分区，/dev/sda是U盘  
+
 fdisk /dev/sda
-# 依次输入以下字符
+# 依次输入以下字符  
+
 p
 d # 删除U盘分区
 n
@@ -82,18 +84,23 @@ p
 <回车> # 默认分区起点
 <回车> # 默认分区尾部
 w # 保存配置
-# 格式化
+# 格式化  
+
 mkfs.ext4 /dev/新建分区的名字  # 一般sda
 
-# 挂载
+# 挂载  
+
 mount /dev/sda /mnt/sda
-# 如果提示没有找到文件夹，可以先使用mkdir /mnt/sda建立文件夹
+# 如果提示没有找到文件夹，可以先使用mkdir /mnt/sda建立文件夹  
+
 cd /mnt/sda
 ls
 # 显示结果lost+found即为成功
-# 迁移/overlay数据
+# 迁移/overlay数据  
+
 cp -r /overlay/* /mnt/sda  # sda是新建分区的名字
-# 最后查看/mnt/sda目录下是否有了/overlay目录的数据,有则成功
+# 最后查看/mnt/sda目录下是否有了/overlay目录的数据,有则成功  
+
 ```
   
 建议重启路由器，再在图形化界面里进行挂载，具体在`系统->挂载点`，然后点击添加，选择U盘设备（通过大小可以判断），此时应该会只有一个选项就是`挂载点`，选择`作为外部 overlay 使用（/overlay）`，顺便把启用的勾打上，保存并应用，最后建议重启一下。 
